@@ -53,3 +53,11 @@ document.getElementById('themeToggle').addEventListener('click', function() {
     document.body.classList.toggle('dark-mode');
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navMenu = document.querySelector(".navbar ul");
+
+    menuToggle.addEventListener("click", function () {
+        navMenu.classList.toggle("active");
+    });
+});
